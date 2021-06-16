@@ -61,13 +61,13 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #FCFBE7;
-@water:             #C4DFF6;
-@grass:             #E6F2C1;
+@land:              #E4E4E0;
+@water:             #79CEED;
+@grass:             #A4D190;
 @beach:             #FFEEC7;
-@park:              #DAF2C1;
-@cemetery:          #D6DED2;
-@wooded:            #C3D9AD;
+@park:              #A4D190;
+@cemetery:          #CCDBC5;
+@wooded:            #A4D190;
 @agriculture:       #F2E8B6;
 
 @building:          #E4E0E0;
@@ -93,19 +93,19 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     #E65C5C;
+@motorway_line:     #e8904d;
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
-@trunk_line:        #E68A5C;
+@trunk_line:        #E6C65C;
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #FFC859;
+@primary_line:      #FFFFFF;
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #FFE873;
+@secondary_line:    #FFFFFF;
 @secondary_fill:    lighten(@secondary_line,10%);
 @secondary_case:    @secondary_line * 0.9;
 
@@ -147,25 +147,25 @@ Map { font-directory: url(./fonts); }
 @state_text:        #546;
 @state_halo:        @place_halo;
 
-@city_text:         #444;
+@city_text:         #333;
 @city_halo:         @place_halo;
 
-@town_text:         #666;
+@town_text:         #555;
 @town_halo:         @place_halo;
 
-@poi_text:          #888;
+@poi_text:          #777;
 
-@road_text:         #777;
+@road_text:         #666;
 @road_halo:         #fff;
 
-@other_text:        #888;
+@other_text:        #777;
 @other_halo:        @place_halo;
 
 @locality_text:     #aaa;
 @locality_halo:     @land;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      #888;
+@village_text:      #777;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */

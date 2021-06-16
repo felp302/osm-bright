@@ -188,12 +188,12 @@
   text-face-name:@sans;
   text-placement:point;
   text-fill:@other_text;
-  text-size:10;
+  text-size:12;
   text-halo-fill:@other_halo;
   text-halo-radius:1;
   text-wrap-width: 30;
   [zoom>=14] {
-    text-size:11;
+    text-size:12;
     text-character-spacing: 1;
     text-wrap-width: 40;
     text-line-spacing: 1;
@@ -206,19 +206,19 @@
     text-line-spacing: 1;
   }
   [zoom>=16] {
-    text-size:12;
+    text-size:14;
     text-character-spacing: 2;
     text-wrap-width: 120;
     text-line-spacing: 2;
   } 
   [zoom>=17] {
-    text-size:13; 
+    text-size:16;
     text-character-spacing: 3;
     text-wrap-width: 160;
     text-line-spacing: 4;
   }
   [zoom>=18] {
-    text-size:14;
+    text-size:16;
     text-character-spacing: 4;
     text-line-spacing: 6;
   }
@@ -463,9 +463,15 @@
 /* TRAIN STATIONS
 /* ================================================================== */
 
-#train_stations[zoom>15]{
-  point-file:url('img/icon/rail-12.png');
-  [zoom>=17] { point-file:url('img/icon/rail-18.png'); }
+#train_stations[zoom>12]{
+  point-file:url('img/icon/rail.png');
+  [zoom>=17] { point-file:url('img/icon/rail.png'); }
 }
+
+#train_stations[type='subway'][zoom>12]{
+  point-file:url('img/icon/underground.png');
+  [zoom>=17] { point-file:url('img/icon/underground.png'); }
+}
+
 
 /* ****************************************************************** */
